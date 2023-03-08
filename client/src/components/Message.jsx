@@ -3,7 +3,11 @@ import "./Message.css";
 export default function Message({ message }) {
     return (
         <div className="message-container">
-            <img src={message.user.image} alt="" />
+            <img
+                src={message.user.image}
+                alt=""
+                style={{ heigth: "50px", width: "50px" }}
+            />
             <div>
                 <div className="message-header">
                     <h3>{message.user.name}</h3>

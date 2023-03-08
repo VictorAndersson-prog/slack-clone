@@ -18,6 +18,10 @@ export default function Channel() {
             {messages
                 ? messages.map((message) => <Message message={message} />)
                 : "Loading..."}
+            <div>
+                <input type="text" />
+                <button>Send message</button>
+            </div>
         </div>
     );
 }
